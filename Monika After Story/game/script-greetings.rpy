@@ -3685,6 +3685,17 @@ init 5 python:
         code="GRE"
     )
 
+init 5 python:
+    addEvent(
+        Event(
+            persistent.greeting_database,
+            eventlabel="greeting_indo",
+            unlocked=True,
+            aff_range=(mas_aff.NORMAL,None)
+        ),
+        code="GRE"
+    )
+
 
 label greeting_indo:
     m 1hsb "Halo [player]!"
